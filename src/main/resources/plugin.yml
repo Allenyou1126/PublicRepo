@@ -1,0 +1,5 @@
+name: PublicRepo
+main: wang.allenyou.publicrepo.PublicRepoPlugin
+version: 1.0-SNAPSHOT
+api-version: 1.19.2
+author: Allen You
