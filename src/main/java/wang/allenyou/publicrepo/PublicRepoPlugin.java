@@ -3,6 +3,7 @@ package wang.allenyou.publicrepo;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 import wang.allenyou.publicrepo.command.OpenRepoCommandHandler;
+import wang.allenyou.publicrepo.command.OpenTrashCanCommandHandler;
 import wang.allenyou.publicrepo.repo.RepoManager;
 
 public class PublicRepoPlugin extends JavaPlugin {
@@ -20,6 +21,11 @@ public class PublicRepoPlugin extends JavaPlugin {
 		// Register Command /openrepo with command handler
 		if (Bukkit.getPluginCommand("openrepo") != null) {
 			Bukkit.getPluginCommand("openrepo").setExecutor(new OpenRepoCommandHandler());
+		}
+
+		// Register Command /opentrashcan with command handler
+		if (Bukkit.getPluginCommand("opentrashcan") != null) {
+			Bukkit.getPluginCommand("opentrashcan").setExecutor(new OpenTrashCanCommandHandler());
 		}
 	}
 	@Override

@@ -11,3 +11,9 @@ commands:
       - "oro"
     usage: "/openrepo"
     description: "Open the public repository."
+  opentrashcan:
+    aliases:
+      - "opentrash"
+      - "ot"
+    usage: "/opentrash"
+    description: "Open a trash can."
